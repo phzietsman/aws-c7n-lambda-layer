@@ -15,7 +15,7 @@ install:
   - source custodian/bin/activate
   - pip install c7n
   - deactivate
-  - pip install awscli
+  - sudo pip install awscli
 script:
   - sudo bash ./config.sh
   - zip -r content.zip custodian
