@@ -7,13 +7,13 @@ env:
   - secure: QWga58KqZFk5nGoHdPr/nf6gkLEbAYQZCEgHh0YwaNNAVK34tsi0INF3EHBm3yyDDIc3m1trsT51YmdrVaKq1eXuV7kBUYT3LIG4K9AKfeGtL854fJbAKA39cRuCLVH7OMNXLDoQDh3OlwZ+2aZXyKyMcAjGaaTNZyk2Qk+XkeD4yBG81KWkrewFyGrwJnK4P24sZ+uAzs21oquzwsXfUMnNafHSdHPWcHAkmHfDG2SrNSvRj/9umS0ias1rsw75SrM1iNbMB2iYq4m3mFpW5HxmafIeUW0ow43R99NO4C+DCcLS4GLIm2gkanRHwPAO/frf788WwrXqb+bvCETzBkLUzuwiEJPXzZdFCkW+4Uh4k1gcr+mbDNi0DT0XpNqNSaoU9O9ce5xqXG8ScIEI04wDY9cdDlSOifSePK0fqmd8mpWX36ONhowGq2OeS3efE/RzhuMv0XMbQc1Eha4bqRAMiJuBu9hapC5GzZjJ8uOgQTX5Y1itBCgPyFk8t17lCaAeEh0DQG3iCnbNUoA51YTYCV1eSNpczRwPoKJQKSgStoM/CA/QGjYRtlotqR1/PV5LuuZWDeWxtm0eOxOxE+07XU4Y/mEowy6kriZjZ2KY+fMG5YqVMHUnH96FZh6++P2kc2hQNSWeR4fzcT17T2c6kYsWtxdVFXVRe/7NNXY=
   - secure: KjJO1bC/2SfvHoT78UzVPS0hcUKlrmaVniOjf89nYz6CpCkg02wHlYBEcAX73P7FfbZBDXbWDGF82l0gGzuahkGUlJAqV/78u2gvPZ6FFkpGW1Jwoo4CvpJaDJmTd0OWttFcxs1VC2oYBdg9g8FH3zUMxcGhwvZotTOQpeiOj5Z2kU3x3NwLO3DJOmDGLjfzSHPpIe/osOptZkgY6JxTTgRX9QJko+m4nScFLRIZ4bSyUOAVi5+lfvPOjlghX8X5DHtOUdBU0BoOOAqxcWn2e5mjZW1OELHW/2TCmaujMFeFPZERFw9+RM/EVY9+I5Rdgg1xl6fbgEqbaGmit1wI7JxrnBJPXWlU13JiS3Uuhb1boRjo94uA4qcNaeo7K7lViPuc+s/wKYylwwubuZdlC2ze82L+sx45TUYeVGVXQDfPcwFkZVJPlomrGv4g5/S+DIWJXaSiUUIHWtS2DwfNhWT7u4TVxEfFtmplo4z/eIfiaCvzIRRxMmnWhX81EUu8qQlbdqosdzq4aWgmcz9EmisLFBNXtjqU5+3yLZBfoVVGq65DnrevPWDv5sUpbKXXEiheDALbuwaBS4uUPs8Lov52XGJnHntNFzMrNr+HjA2HYPmVzbq+ezK9JuPmbBdIcCLD1zL0zm5USxbEbwbojEMF9j1ivfwn+2DfENS2+eo=
 before_install:
-- "./config.sh"
+  - "./config.sh"
 install:
-- pip install virtualenv
-- virtualenv custodian
-- source custodian/bin/activate
-- pip install c7n
+  - pip install virtualenv
+  - virtualenv custodian
+  - source custodian/bin/activate
+  - pip install c7n
 script:
-- cd custodian
-- ls
-- aws s3 ls
+  - cd custodian
+  - ls
+  - aws s3 ls
