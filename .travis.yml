@@ -11,11 +11,11 @@ env:
   - secure: KjJO1bC/2SfvHoT78UzVPS0hcUKlrmaVniOjf89nYz6CpCkg02wHlYBEcAX73P7FfbZBDXbWDGF82l0gGzuahkGUlJAqV/78u2gvPZ6FFkpGW1Jwoo4CvpJaDJmTd0OWttFcxs1VC2oYBdg9g8FH3zUMxcGhwvZotTOQpeiOj5Z2kU3x3NwLO3DJOmDGLjfzSHPpIe/osOptZkgY6JxTTgRX9QJko+m4nScFLRIZ4bSyUOAVi5+lfvPOjlghX8X5DHtOUdBU0BoOOAqxcWn2e5mjZW1OELHW/2TCmaujMFeFPZERFw9+RM/EVY9+I5Rdgg1xl6fbgEqbaGmit1wI7JxrnBJPXWlU13JiS3Uuhb1boRjo94uA4qcNaeo7K7lViPuc+s/wKYylwwubuZdlC2ze82L+sx45TUYeVGVXQDfPcwFkZVJPlomrGv4g5/S+DIWJXaSiUUIHWtS2DwfNhWT7u4TVxEfFtmplo4z/eIfiaCvzIRRxMmnWhX81EUu8qQlbdqosdzq4aWgmcz9EmisLFBNXtjqU5+3yLZBfoVVGq65DnrevPWDv5sUpbKXXEiheDALbuwaBS4uUPs8Lov52XGJnHntNFzMrNr+HjA2HYPmVzbq+ezK9JuPmbBdIcCLD1zL0zm5USxbEbwbojEMF9j1ivfwn+2DfENS2+eo=
 install:
   - pip install virtualenv
-  - pip install awscli
   - virtualenv custodian
   - source custodian/bin/activate
   - pip install c7n
   - deactivate
+  - pip install awscli
 script:
   - sudo bash ./config.sh
   - zip -r content.zip custodian
