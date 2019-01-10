@@ -18,5 +18,5 @@ install:
   - sudo pip install awscli
 script:
   - sudo bash ./config.sh
-  - zip -r content.zip /tmp/custodian
+  - bash ./lambdadize-custodian.sh
   - aws lambda publish-layer-version --compatible-runtimes python2.7 --zip-file fileb://content.zip --layer-name c7n-lambda-layer
