@@ -19,4 +19,4 @@ install:
 script:
   - sudo bash ./config.sh
   - bash ./lambdadize-custodian.sh
-  - aws lambda publish-layer-version --compatible-runtimes python2.7 --zip-file fileb://tmp/content.zip --layer-name c6n-lambda-layer
+  - aws lambda publish-layer-version --compatible-runtimes python2.7 --zip-file fileb:///tmp/content.zip --layer-name c6n-lambda-layer
