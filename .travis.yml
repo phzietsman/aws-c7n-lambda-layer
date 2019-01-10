@@ -4,6 +4,7 @@ python:
 - 2.7.12
 env:
   global:
+  - LAYER_NAME=c7n-lambda-layer
   - AWS_DEFAULT_REGION=eu-west-1
   # AWS_ACCESS_KEY_ID
   - secure: QWga58KqZFk5nGoHdPr/nf6gkLEbAYQZCEgHh0YwaNNAVK34tsi0INF3EHBm3yyDDIc3m1trsT51YmdrVaKq1eXuV7kBUYT3LIG4K9AKfeGtL854fJbAKA39cRuCLVH7OMNXLDoQDh3OlwZ+2aZXyKyMcAjGaaTNZyk2Qk+XkeD4yBG81KWkrewFyGrwJnK4P24sZ+uAzs21oquzwsXfUMnNafHSdHPWcHAkmHfDG2SrNSvRj/9umS0ias1rsw75SrM1iNbMB2iYq4m3mFpW5HxmafIeUW0ow43R99NO4C+DCcLS4GLIm2gkanRHwPAO/frf788WwrXqb+bvCETzBkLUzuwiEJPXzZdFCkW+4Uh4k1gcr+mbDNi0DT0XpNqNSaoU9O9ce5xqXG8ScIEI04wDY9cdDlSOifSePK0fqmd8mpWX36ONhowGq2OeS3efE/RzhuMv0XMbQc1Eha4bqRAMiJuBu9hapC5GzZjJ8uOgQTX5Y1itBCgPyFk8t17lCaAeEh0DQG3iCnbNUoA51YTYCV1eSNpczRwPoKJQKSgStoM/CA/QGjYRtlotqR1/PV5LuuZWDeWxtm0eOxOxE+07XU4Y/mEowy6kriZjZ2KY+fMG5YqVMHUnH96FZh6++P2kc2hQNSWeR4fzcT17T2c6kYsWtxdVFXVRe/7NNXY=
@@ -19,4 +20,5 @@ install:
 script:
   - sudo bash ./config.sh
   - bash ./lambdadize-custodian.sh
-  - aws lambda publish-layer-version --compatible-runtimes python2.7 --zip-file fileb:///tmp/content.zip --layer-name c7n-lambda-layer
+  - version=$(aws lambda publish-layer-version --compatible-runtimes python2.7 --zip-file fileb:///tmp/content.zip --layer-name $LAYER_NAME --query Version)
+  - aws lambda add-layer-version-permission --layer-name $LAYER_NAME --version-number $version --statement-id 'PublicLayer' --action lambda:GetLayerVersion --principal '*'
