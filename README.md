@@ -30,7 +30,7 @@ Once this has been done, your Lambda now has access to our Custodian source file
 | 10/01/2019 | c7n-lambda-layer | 8 | arn:aws:lambda:eu-west-1:459295082152:layer:c7n-lambda-layer:8 | Python 2.7.12 |
 
 # Custodian Example <a id="Example"></a>
-Running Custodian from our AWS Lambda Layer:
+Below is an example of how you can run the Custodian command through our AWS Lambda Layer: 
 
 ```python
 import commands
