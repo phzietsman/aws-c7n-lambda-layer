@@ -1,7 +1,7 @@
 # Synthesis Software Technologies' public Cloud Custodian (C7N) AWS Lambda Layer 
-=========  
 
-[![Build Status](https://travis-ci.org/phzietsman/aws-c7n-lambda-layer.svg?branch=master)](https://travis-ci.org/phzietsman/aws-c7n-lambda-layer)  
+
+[![Build Status](https://travis-ci.org/synthesis-labs/aws-c7n-lambda-layer.svg?branch=master)](https://travis-ci.org/synthesis-labs/aws-c7n-lambda-layer)
 
 This repo outlines some of the details on Synthesis' public Cloud Custodian AWS Lambda Layer. For the latest layer version see the section: [Latest C7N Layer Version](#versions) below.
 

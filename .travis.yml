@@ -6,26 +6,27 @@ env:
   global:
   - LAYER_NAME=c7n-lambda-layer
   - AWS_DEFAULT_REGION=eu-west-1
-  # AWS_ACCESS_KEY_ID
-  - secure: QWga58KqZFk5nGoHdPr/nf6gkLEbAYQZCEgHh0YwaNNAVK34tsi0INF3EHBm3yyDDIc3m1trsT51YmdrVaKq1eXuV7kBUYT3LIG4K9AKfeGtL854fJbAKA39cRuCLVH7OMNXLDoQDh3OlwZ+2aZXyKyMcAjGaaTNZyk2Qk+XkeD4yBG81KWkrewFyGrwJnK4P24sZ+uAzs21oquzwsXfUMnNafHSdHPWcHAkmHfDG2SrNSvRj/9umS0ias1rsw75SrM1iNbMB2iYq4m3mFpW5HxmafIeUW0ow43R99NO4C+DCcLS4GLIm2gkanRHwPAO/frf788WwrXqb+bvCETzBkLUzuwiEJPXzZdFCkW+4Uh4k1gcr+mbDNi0DT0XpNqNSaoU9O9ce5xqXG8ScIEI04wDY9cdDlSOifSePK0fqmd8mpWX36ONhowGq2OeS3efE/RzhuMv0XMbQc1Eha4bqRAMiJuBu9hapC5GzZjJ8uOgQTX5Y1itBCgPyFk8t17lCaAeEh0DQG3iCnbNUoA51YTYCV1eSNpczRwPoKJQKSgStoM/CA/QGjYRtlotqR1/PV5LuuZWDeWxtm0eOxOxE+07XU4Y/mEowy6kriZjZ2KY+fMG5YqVMHUnH96FZh6++P2kc2hQNSWeR4fzcT17T2c6kYsWtxdVFXVRe/7NNXY=
-  # AWS_SECRET_ACCESS_KEY
-  - secure: KjJO1bC/2SfvHoT78UzVPS0hcUKlrmaVniOjf89nYz6CpCkg02wHlYBEcAX73P7FfbZBDXbWDGF82l0gGzuahkGUlJAqV/78u2gvPZ6FFkpGW1Jwoo4CvpJaDJmTd0OWttFcxs1VC2oYBdg9g8FH3zUMxcGhwvZotTOQpeiOj5Z2kU3x3NwLO3DJOmDGLjfzSHPpIe/osOptZkgY6JxTTgRX9QJko+m4nScFLRIZ4bSyUOAVi5+lfvPOjlghX8X5DHtOUdBU0BoOOAqxcWn2e5mjZW1OELHW/2TCmaujMFeFPZERFw9+RM/EVY9+I5Rdgg1xl6fbgEqbaGmit1wI7JxrnBJPXWlU13JiS3Uuhb1boRjo94uA4qcNaeo7K7lViPuc+s/wKYylwwubuZdlC2ze82L+sx45TUYeVGVXQDfPcwFkZVJPlomrGv4g5/S+DIWJXaSiUUIHWtS2DwfNhWT7u4TVxEfFtmplo4z/eIfiaCvzIRRxMmnWhX81EUu8qQlbdqosdzq4aWgmcz9EmisLFBNXtjqU5+3yLZBfoVVGq65DnrevPWDv5sUpbKXXEiheDALbuwaBS4uUPs8Lov52XGJnHntNFzMrNr+HjA2HYPmVzbq+ezK9JuPmbBdIcCLD1zL0zm5USxbEbwbojEMF9j1ivfwn+2DfENS2+eo=
+  - secure: ESoiYf10DIx5Ig/OBTJK0BnXuYQX0ig6dkAgJywl5JcyZmMzp/rgl8Oq9PtFZGutozkyGyeS22QvdHPXSuH9oCNBDDCxfvhQmofVNUK8HjW7OmqO45HCpD5g8183zqN2RvZAxvV3DEtxmy8AGQjPAooMwKRifx2ell2FJy8SOJ5WXoTX3695tRcfZ/Vy9Re+ys7l7Jdi0Kvh7D9LsHNEQn77qIluhgi0VMQI8/q+zbKveKAFbRasgRj4Kdi4iIZqLhvzBKuxsdVy27dRw+3bj/MbCNDwxNQxgwdqeRhhbOzyQ/kSLCLNPZYxhRjgcgmzUqTOIzWe0iHF/HLWEns3bvlrB29s0DHVwyXqQfadZdizho9rSk1B0SsjIcnNCNv1WMk5iFmlJbY1fa5c4I4HYMu6sduOqudwznPnqEGUOKnszbeVL6PVWh0POeA79ueoWR1jcYIJMXuKA5nU4HAGp8VP7G1IRxvq1Bd85C1lvk1P9+DRxBN4u3eEu0K90wQGQj3PKHazpty4DIDiEX92qUqz2h0Tevaz5XXEe2PfnjhucE8on16QTJ5WGLrOG9Anf8dOhE664ZGp7vc8saquEKpAhdB9GHpZ/m5YDEZIEOOtPo+r3mdXTlicZfuyoYqbMfzy94j2ZiejMSdcIHL7wDADN156ZRQhZCPNkA2G9As=
+  - secure: TaFUx/3KvT83ub10XMJf+dhCbQXvy8gsbUzcV41ARn7oTQY+pCp6epnARjKcWZ08DozkalkFz8FGka1MdsTmyC3LwVQvVrT+A5F6TRLKxLHdnfzkwJKuE3fS1jO35UGYoEicj45yT5wQtq16Ne6+XMnKjFgvNm6/iVq95ej7SZZyH44Oe0PMvsrcIEZrekeLMhB2dnputEfm4tVGpKXUmI7Zch+5URXBiPY31wOqQG9wHaL4zsEYhuuneD+busU4//V0jCYaIekZe6tEljhlRTd/E3oFmaa9yjUsmZEZDoY/7eZtVbvEl3xVZ71yPIDu6GKwMj6Qns3SD2si/UL87hnPhXC6qiiAKUX8qah8wZR4aFuzP0TRFXUH5JEbFUv6TIqcUtX73BCnqM9krYnYsFpOTHy1Wtd/kCp6eR6MQ38TRO2Pe6+lbLAmKwwjA08UPsagsoT9xXg9SY2DQ3TQhwVqq9RQohW7sEuPtYT0nRu1ScHE/ehi658AUXH970U70iXKuHl60Zhc0FkCdnw0uHmEHftG85V7s/XmBN+jIO3f+QQ47E2UgiWrE/7IfjQgLe6F1lwf0IIKDl5tIvvm+3pO3cbbJ7u0jh5leuUGvG76rUxXzIrr2k0mm+w/xADghp1nn7yffhQE8GzCqb3/oAOakBqWz4HiU74mZV8mKR4=
 before_install:
-  - |
-      if ! git diff --name-only $TRAVIS_COMMIT_RANGE | grep -qvE '(.md)|(.png)|(.pdf)|^(LICENSE)|^(docs)'
-      then
-        echo "Only doc files were updated, not running the CI."
-        exit
-      fi
+- |
+  if ! git diff --name-only $TRAVIS_COMMIT_RANGE | grep -qvE '(.md)|(.png)|(.pdf)|^(LICENSE)|^(docs)'
+  then
+    echo "Only doc files were updated, not running the CI."
+    exit
+  fi
 install:
-  - pip install virtualenv
-  - virtualenv /tmp/custodian
-  - source /tmp/custodian/bin/activate
-  - pip install c7n==0.8.33.0
-  - deactivate
-  - sudo pip install awscli
+- pip install virtualenv
+- virtualenv /tmp/custodian
+- source /tmp/custodian/bin/activate
+- pip install c7n==0.8.33.0
+- deactivate
+- sudo pip install awscli
 script:
-  - sudo bash ./config.sh
-  - bash ./lambdadize-custodian.sh
-  - version=$(aws lambda publish-layer-version --compatible-runtimes python2.7 --zip-file fileb:///tmp/content.zip --layer-name $LAYER_NAME --query Version)
-  - aws lambda add-layer-version-permission --layer-name $LAYER_NAME --version-number $version --statement-id 'PublicLayer' --action lambda:GetLayerVersion --principal '*'
+- sudo bash ./config.sh
+- bash ./lambdadize-custodian.sh
+- version=$(aws lambda publish-layer-version --compatible-runtimes python2.7 --zip-file
+  fileb:///tmp/content.zip --layer-name $LAYER_NAME --query Version)
+- aws lambda add-layer-version-permission --layer-name $LAYER_NAME --version-number
+  $version --statement-id 'PublicLayer' --action lambda:GetLayerVersion --principal
+  '*'
